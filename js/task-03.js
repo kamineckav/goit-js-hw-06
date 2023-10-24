@@ -21,7 +21,7 @@ const gallery = document.querySelector(".gallery");
 
 const createGallery = (images) => {
   let markup = "";
-  images.forEach((image) => {
+  images.map((image) => {
     markup += `<li class="gallery-item"><img src="${image.url}" alt="${image.alt}" width="100%" class="gallery-img"></li>`;
   });
   gallery.insertAdjacentHTML("beforeend", markup);
