@@ -19,12 +19,13 @@ const images = [
 
 const gallery = document.querySelector(".gallery");
 
-const createGallery = (images) => {
-  let markup = "";
-  images.map((image) => {
-    markup += `<li class="gallery-item"><img src="${image.url}" alt="${image.alt}" width="100%" class="gallery-img"></li>`;
-  });
-  gallery.insertAdjacentHTML("beforeend", markup);
-};
+const imagesMarkup = images.reduce((markup, image) => {
+  return (
+    markup +
+    `<li>
+      <img src="${image.url}" alt="${image.alt}" width="100%" class="gallery-img">>
+    </li>`
+  );
+}, "");
 
-createGallery(images);
+gallery.insertAdjacentHTML("beforeend", imagesMarkup);
