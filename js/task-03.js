@@ -23,7 +23,7 @@ const imagesMarkup = images.reduce((markup, image) => {
   return (
     markup +
     `<li>
-      <img src="${image.url}" alt="${image.alt}" width="100%" class="gallery-img">>
+      <img src="${image.url}" alt="${image.alt}" width="100%" class="gallery-img">
     </li>`
   );
 }, "");
