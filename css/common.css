@@ -23,22 +23,19 @@ button {
   cursor: pointer;
 }
 
-li {
+.list {
   list-style: none;
   font-size: 14px;
-}
-
-a {
-  text-decoration: none;
-  color: #212121;
-  font-style: normal;
-}
-
-div {
-  background-color: #9bbef5 ;
+  background-color: #9bbef5;
   margin-bottom: 12px;
   display: flex;
   width: max-content;
   padding: 8px;
   border-radius: 5px;
+}
+
+.list a {
+  text-decoration: none;
+  color: #212121;
+  font-style: normal;
 }
